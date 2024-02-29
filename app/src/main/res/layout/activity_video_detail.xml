@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".videoDetailActivity">
+
+    <ImageView
+        android:id="@+id/delete_vid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_delete_24"
+        android:layout_marginRight="20dp"/>
+    <ImageView
+        android:id="@+id/share_vid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/share_1"
+        android:layout_toRightOf="@+id/delete_vid"/>
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/control_layout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/previou_btn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_skip_previous_24" />
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="31dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_pause_24" />
+
+
+        <ImageButton
+            android:id="@+id/next_btn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_skip_next_24" />
+    </LinearLayout>
+
+
+</RelativeLayout>
